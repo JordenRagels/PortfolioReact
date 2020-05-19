@@ -1,11 +1,12 @@
 import React from 'react';
+import './Toolbar.css';
 
-const toolbar = props => (
-    <header>
-        <nav>
+const Toolbar = props => (
+    <header classNamee='toolbar'>
+        <nav className='toolbarNav'>
             <div></div>
-            <div><a href='/'> THE LOGO </a></div>
-            <div>
+            <div className='toolbarLogo'><a href='/'> THE LOGO </a></div>
+            <div className='toolbarNavItems'>
                 <ul>
                     <li><a href="/">Login</a></li>
                     <li><a href="/">Profile</a></li>
@@ -15,5 +16,5 @@ const toolbar = props => (
     </header>
 );
 
-export default toolbar;
+export default Toolbar;
 

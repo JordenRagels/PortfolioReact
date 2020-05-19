@@ -1,12 +1,13 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './App.css';
-import toolbar from './components/Toolbar/toolbar';
+import Toolbar from './components/Toolbar/Toolbar'; 
 
-class App extends Component() {
+class App extends Component {
   render() {
      return (
     <div className="App">
-      <toolbar/>
+      <Toolbar/>
+      <p> This is a test paragraph </p>
     </div>
   );
   }
