@@ -2,37 +2,44 @@ import React from 'react';
 import './SideDrawer.css'
 import SideLogo from '../../images/full-logo.png'
 
-const sideDrawer = props => (
-    <nav className='side-drawer'>
-    <div className='sideDrawerLogo'>
+const sideDrawer = props => {
+    let drawerClasses = ['side-drawer'];
+    if (props.show) {
+        drawerClasses = ['side-drawer open']
+    }
+
+    return ( 
+    <nav className={drawerClasses}>
+        <div className='sideDrawerLogo'>
             <a href='/'>
             <img src= { SideLogo } alt='logo'></img>
             </a>
-            </div>
+        </div>
         <ul>
             <li>
-                <a href='/'>Structure Your Day</a>
+                <a href='/'>STRUCTURE YOUR DAY</a>
             </li>
             <li>
-                <a href='/'>View Schedule</a>
+                <a href='/'>VIEW SCHEDULE</a>
             </li>
             <li>
-                <a href='/'>Copy Schedule</a>
+                <a href='/'>COPY SCHEDULE</a>
             </li>
             <li>
-               <a href='/'>Check Your Score</a> 
+               <a href='/'>CHECK YOUR SCORE</a> 
             </li>
             <li>
-                <a href='/'>Share Your Schedule</a>
+                <a href='/'>SHARE YOUR SCHEDULE</a>
             </li>
             <li>
-                <a href='/'>Explore Activities</a>
+                <a href='/'>EXPLORE ACTIVITIES</a>
             </li>
             <li>
-                <a href='/'>Contact</a>
+                <a href='/'>CONTACT</a>
             </li>
         </ul>
     </nav>
-);
+    );
+};
 
 export default sideDrawer;

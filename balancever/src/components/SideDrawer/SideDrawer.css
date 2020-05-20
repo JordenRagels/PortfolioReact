@@ -8,6 +8,9 @@
     left: 0;
     width: 70%;
     max-width: 400px;
+    z-index: 200;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in-out;
 }
 
 .sideDrawerLogo img {
@@ -15,4 +18,39 @@
     width: 40%;
     margin-left: 0.5rem;
     margin-top: 1rem;
+}
+
+.side-drawer.open {
+    transform: translateX(0);
+}
+
+.side-drawer ul {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.side-drawer li {
+    margin: 0.7rem 0;
+    background-color: white;
+    box-sizing: border-box;
+    width: 250px;
+    height: 20px;
+    padding: 25px; 
+    text-align: center;
+    border-radius: 30px;
+}
+
+.side-drawer a {
+    color: navy;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+}
+
+.side-drawer a:hover,
+.side-drawer a:active {
+    color: rgba(139,217,249,1);
 }

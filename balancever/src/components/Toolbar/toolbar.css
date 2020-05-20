@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     position: fixed;
-    background-color: #F8F8FF;
+    background-color:#808080;
     height: 56px;
 }
 
@@ -38,9 +38,10 @@
 .toolbarNavItems a {
     color: navy;
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
 }
 
 .toolbarNavItems a:hover,
 toolbarNavItems a:active {
-    color: white;
+    color: rgba(139,217,249,1);
 }
