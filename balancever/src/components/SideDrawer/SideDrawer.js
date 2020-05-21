@@ -1,6 +1,7 @@
 import React from 'react';
 import './SideDrawer.css'
 import SideLogo from '../../images/full-logo.png'
+import {Link} from 'react-router-dom';
 
 const sideDrawer = props => {
     let drawerClasses = ['side-drawer'];
@@ -16,27 +17,48 @@ const sideDrawer = props => {
             </a>
         </div>
         <ul>
+            <Link to='/structure'>
             <li>
-                <a href='/'>STRUCTURE YOUR DAY</a>
+                <a>STRUCTURE YOUR DAY</a>
             </li>
+            </Link>
+
+            <Link to='/view'>
             <li>
-                <a href='/'>VIEW SCHEDULE</a>
+                <a>VIEW SCHEDULE</a>
             </li>
+            </Link>
+
+            <Link to='/copy'>
             <li>
-                <a href='/'>COPY SCHEDULE</a>
+                <a>COPY SCHEDULE</a>
             </li>
+            </Link>
+
+            <Link to='/score'>
             <li>
-               <a href='/'>CHECK YOUR SCORE</a> 
+               <a>CHECK YOUR SCORE</a> 
             </li>
+            </Link>
+
+            <Link to='/share'>
             <li>
-                <a href='/'>SHARE YOUR SCHEDULE</a>
+                <a>SHARE YOUR SCHEDULE</a>
             </li>
+            </Link>
+
+            <Link to='/explore'>
             <li>
-                <a href='/'>EXPLORE ACTIVITIES</a>
+                <a>EXPLORE ACTIVITIES</a>
             </li>
+            </Link>
+
+            <Link to='/contact'>
             <li>
-                <a href='/'>CONTACT</a>
+                <a>CONTACT</a>
             </li>
+            </Link>
+
         </ul>
     </nav>
     );

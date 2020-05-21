@@ -8,6 +8,7 @@ import * as firebase from 'firebase/app';
 import 'firebase/auth';
 import firebaseConfig from '../../firebaseConfig';
 import DrawerToggleButton from '../SideDrawer/SideToggleButton';
+import {Link} from 'react-router-dom';
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 const firebaseAppAuth = firebaseApp.auth();
@@ -31,15 +32,15 @@ const Toolbar = props => (
                 <ul>
                 {
             props.user
-              ? <p>Hello, {props.user.displayName}</p>
+              ? <p>Hello, {props.user.displayName}</p> 
               : <p>Please sign in.</p>
-          }
+                 }
 
-          {
+                {
             props.user
               ? <button onClick={props.signOut}>Logout</button>
               : <button onClick={props.signInWithGoogle}>Login</button>
-          }
+                 }
                     <li><a href="/">Profile</a></li>
                 </ul>
             </div>
